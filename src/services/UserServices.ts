@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
-import User, { IUser } from "../schema/User";
+import User from "../schema/User";
+import { IUser } from "../utils/typesSchema";
 
 export const createUser = async (username: string, email:string, password:string) => {
   try {
